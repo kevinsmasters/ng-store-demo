@@ -3,9 +3,12 @@
   [autosize]="true"
 >
   <mat-drawer mode="side" opened class="p-6">
-    <div>filters</div>
+    <app-filters (showCategory)="onShowCategory($event)"></app-filters>
   </mat-drawer>
   <mat-drawer-content class="p-6">
-    <app-products-header></app-products-header>
+    <app-products-header
+      (columnsCountChange)="onColumnsCountChange($event)"
+    ></app-products-header>
+    {{ category }}
   </mat-drawer-content>
 </mat-drawer-container>
