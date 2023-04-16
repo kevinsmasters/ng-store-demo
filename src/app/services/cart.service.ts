@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
 import { Cart, CartItem } from '../models/cart.model';
 import { MatSnackBar } from '@angular/material/snack-bar';
-
+//https://www.simplilearn.com/tutorials/angular-tutorial/angular-service
 @Injectable({
   providedIn: 'root'
 })
